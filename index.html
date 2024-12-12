@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Transaction Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Check Your Transaction History</h1>
+    </header>
+
+    <main>
+        <section id="formSection">
+            <input type="text" id="walletAddressInput" placeholder="Enter Wallet Address" />
+            <button id="checkTransactionsButton">Check Transactions</button>
+        </section>
+
+        <section id="transactionSection">
+            <h2>Transaction History</h2>
+            <table id="transactionTable">
+                <thead>
+                    <tr>
+                        <th>Txn Hash</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Value (ETH)</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionBody">
+                    <tr>
+                        <td colspan="5">Enter a wallet address to view transaction history.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
